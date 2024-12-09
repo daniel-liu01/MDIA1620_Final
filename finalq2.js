@@ -82,6 +82,22 @@ function TotalPoints(){
     total += badge[key];
   }
   console.log (`Total point count: ${total}`);
+  //Message for the user
+  if(total < 10){
+    console.log("You are horrible, newbie!");
+  }
+  else if(total >= 10 && total < 20){
+    console.log("You are an adventurer!");
+  }
+  else if(total >= 20 && total < 30){
+    console.log("You are a slayer!!");
+  }
+  else if(total >= 30 && total < 40){
+    console.log("You are a divined!!!");
+  }
+  else if(total >= 40){
+    console.log("You are eternal!!!!");
+  }
   StartApp();
 }
 
